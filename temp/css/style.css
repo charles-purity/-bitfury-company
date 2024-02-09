@@ -834,7 +834,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 
 /*----------------------------------------------------*/
 .about-section {
-  background: url(../images/about.jpg) no-repeat center center;
+  background: #efefef no-repeat center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -846,15 +846,15 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .about-section .left-content .heading-title h6 {
   justify-content: start;
-  color: #fff;
+  color: #000;
 }
 .about-section .left-content .heading-title h2 {
   text-align: left;
-  color: #fff;
+  color: #000;
 }
 .about-section .left-content .heading-title p {
   text-align: left;
-  color: #fff;
+  color: #000!important;
 }
 .about-section .left-content .media {
   display: flex;
@@ -881,6 +881,12 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   font-family: 'Poppins', sans-serif;
   line-height: 28px;
 }
+
+.about-section-1 {
+  background: url(../images/footer-section.jpg) no-repeat top center;
+  background-size: cover;
+  padding-top: 120px;
+}
 .about-section .left-content .theme_btn {
   display: block;
   max-width: 200px;
@@ -888,14 +894,15 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #000;
+  border: 1px solid #000;
   border-radius: 30px;
   margin-top: 50px;
 }
 .about-section .left-content .theme_btn:hover, .about-section .left-content .theme_btn:focus {
   background: #0e0e0e;
   border: 1px solid #0e0e0e;
+  color: #fff;
 }
 .about-section .right-side img {
   max-width: 100%;
