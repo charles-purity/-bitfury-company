@@ -1,6 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <style>
+        a {
+            text-decoration: none!important;
+        }
+        .goog-logo-link {
+           display:none !important;
+        }
+        
+        .goog-te-gadget {
+           color: transparent !important;
+        }
+        
+        .goog-te-gadget .goog-te-combo {
+           color: black !important;
+        }
+         * {
+          box-sizing: border-box;
+        }
+        
+        #google_translate_element {
+          z-index: 9999999;
+          position: fixed;
+          bottom: 25px;
+          left: 15px;
+        }
+        
+        .goog-te-gadget {
+          font-family: Roboto, "Open Sans", sans-serif !important;
+          text-transform: uppercase;
+        }
+        
+        .goog-te-gadget-simple {
+          background-color: rgba(0, 0, 0, 0.5) !important;
+          border: 1px solid rgba(255, 255, 255, 0.5) !important;
+          padding: 3px !important;
+          border-radius: 4px !important;
+          font-size: 0.8rem !important;
+          line-height: 2rem !important;
+          display: inline-block;
+          cursor: pointer;
+          zoom: 1;
+          margin-bottom: 4px;
+        }
+        
+        .goog-te-menu2 {
+          max-width: 100%;
+        }
+        
+        .goog-te-menu-value {
+          color: #fff !important;
+        }
+        .goog-te-menu-value:before {
+          font-family: 'Material Icons';
+          content: "\E927";
+          margin-right: 16px;
+          font-size: 2rem;
+          vertical-align: -10px;
+        }
+        
+        .goog-te-menu-value span:nth-child(5) {
+          display: none;
+        }
+        
+        .goog-te-menu-value span:nth-child(3) {
+          border: none !important;
+          font-family: 'Material Icons';
+        }
+        .goog-te-menu-value span:nth-child(3):after {
+          font-family: 'Material Icons';
+          content: "\E5C5";
+          font-size: 1.5rem;
+          vertical-align: -6px;
+        }
+        
+        .goog-te-gadget-icon {
+          background-position: 0px 0px;
+          height: 32px !important;
+          width: 32px !important;
+          margin-right: 8px !important;
+          display: none;
+        }
+        
+        .goog-te-banner-frame.skiptranslate {
+          display: none !important;
+        }
+        
+        
+        body {
+          top: 0px !important;
+        }
+        
+        /* ================================== *\
+            Mediaqueries
+        \* ================================== */
+        @media (max-width: 667px) {
+          #google_translate_element {
+          }
+          #google_translate_element goog-te-gadget {
+          }
+          #google_translate_element .skiptranslate {
+          }
+          #google_translate_element .goog-te-gadget-simple {
+            text-align: center;
+          }
+        }
+        p {
+            font-size: 1rem;
+        }
+        </style>
 
 <!-- Mirrored from bitsfury.com/terms by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Apr 2023 17:01:11 GMT -->
 <!-- Added by HTTrack -->
@@ -703,9 +811,25 @@
     }
 </script>
 
-<!--Start of Tawk.to Script-->
-<script src="http://code.jivosite.com/widget/xvVUYAI4CA" async></script>
-<!--End of Tawk.to Script-->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        setCookie('googtrans', '/en/de', 1);
+        new google.translate.TranslateElement({ pageLanguage: 'ES', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+    function setCookie(key, value, expiry) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+        document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+    }
+</script>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
